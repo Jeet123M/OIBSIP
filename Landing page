@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    body {
+        color: white;
+        padding: 0px;
+        margin: 0px;
+        background: url('https://cdn.pixabay.com/photo/2016/11/22/22/25/abs-1850926_1280.jpg');
+    }
+    .left {
+        display: inline-block;
+        
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    .left img {
+        width: 20px;
+    }
+    .mid {
+        display: block;
+       
+        width: 50%;
+        margin: 10px auto;
+        
+    }
+    .right {
+      display: inline-block;
+      
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+    .navbar {
+        display: inline-block;
+    }
+    .navbar li  {
+        display: inline-block;
+        font-size: 10px;
+    }
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 15px 7px;
+    }
+    .navbar li a:hover,.navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn {
+        background-color: aquamarine;
+        color: blue;
+        padding: 3px 7px;
+        border: 2px solid grey;
+        border-radius: 7px;
+        font-size: 7px;
+        cursor: pointer;
+
+    }
+    .btn:hover {
+        background-color: grey;
+    }
+    .container {
+        border: 2px solid grey;
+        width: 30%;
+        margin: 50px 12px;
+        padding: 12px 12px;
+        border-radius: 10px;
+    }
+    .form-group input {
+        text-align: center;
+    }.container button {
+        display: block;
+        width: 19%;
+        margin: auto;
+    }
+     
+</style>
+<body>
+    <header class="header">
+        <!-- Left box for logo-->
+        <div class="left">
+         <div class="left">
+            <img src="https://cdn.pixabay.com/photo/2018/02/17/20/09/dumbbell-3160788_1280.png" alt="">
+            <div>Gym Fitness</div>
+         </div>
+        </div>
+         <!-- Mid box navigations -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness center</a></li>
+                <li><a href="#">Contact us</a></li>
+             </ul>
+        </div>
+        <!-- Right box buttons -->
+        <div class="right">
+         <button class="btn">Call us now</button>
+         <button class="btn">Email us </button>
+        </div>
+        <div class="container">
+            <h4>To Join this Gym </h4>
+            <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Adress">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+        </div>
+    </header>
+</body>
+</html>
